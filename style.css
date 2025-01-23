@@ -102,12 +102,6 @@ footer {
     text-align: center;
    
 }
-.boxieng{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* Responsive Styling */
 @media (max-width: 1024px) {
     .nav {
