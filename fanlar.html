@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O'quvchilar Uchun Sayt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e6f7ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #005b99;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 10px 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: #003f73;
+      border-radius: 5px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #cceeff;
+    }
+
+    .hero h2 {
+      color: #005b99;
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .content h3 {
+      color: #005b99;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      line-height: 1.6;
+    }
+
+    .test-section {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .test-section button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    .test-section button:hover {
+      background-color: #005b99;
+    }
+
+    footer {
+      background-color: #005b99;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    a {
+        color: white;
+    }
+
+    img.img1 {
+      border-radius: 15px;
+      margin: 15px;
+      width: 80px;
+      height: 50px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .hero {
+        padding: 30px 10px;
+      }
+
+      .hero h2 {
+        font-size: 24px;
+      }
+
+      .test-section button {
+        width: 90%;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 20px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+      }
+
+      .hero h2 {
+        font-size: 20px;
+      }
+
+      .content {
+        padding: 10px;
+      }
+
+      .test-section button {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+  <script>
+    function startTest(subject) {
+      window.location.href = subject + '-test.html';
+    }
+  </script>
+</head>
+<body>
+  <img class="img1" src="https://api.mf.uz/media/filestore/%D1%80%D0%B0%D1%81%D0%BC.jpg" alt="img">
+  <nav>
+    <ul class="nav">
+      <li><a href="index.html">Asosiy sahifa</a></li>
+      <li><a href="yangilik.html">Yangiliklar</a></li>
+      <li><a href="oqituv.html">O‘qituvchilar</a></li>
+      <li><a href="index (2).html">O‘quvchilar uchun</a></li>
+      <li><a href="boglanish.html">Bog‘lanish</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>O'quvchilar Uchun Ta'lim Sayti</h1>
+  </header>
+
+  <div class="hero">
+    <h2>Bilim Ol va Orzularingga Erish!</h2>
+    <p>Bu sayt orqali fanlarni chuqur o'rganishingiz va bilimlaringizni oshirishingiz mumkin.</p>
+  </div>
+
+  <main class="content">
+    <section>
+      <h3>Fanlar</h3>
+      <p>Bizning saytimizda quyidagi fanlar bo'yicha o'rganishingiz mumkin:</p>
+      <ul>
+        <li>Matematika</li>
+        <li>Fizika</li>
+        <li>Kimyo</li>
+        <li>Ingliz tili</li>
+        <li>Rus tili</li>
+      </ul>
+    </section>
+
+    <section class="test-section">
+      <h3>Testlar</h3>
+      <p>Bilimingizni sinab ko'rmoqchimisiz? Quyidagi fanlardan birini tanlang va testlarni boshlang:</p>
+      <button onclick="startTest('Matematika')"><a href="test-matematika.html">Matematika Testi</a></button>
+      <button onclick="startTest('fizika')"><a href="test-fizika.html">Fizika Testi</a></button>
+      <button onclick="startTest('kimyo')"><a href="test-kimyo.html">Kimyo Testi</a></button>
+      <button onclick="startTest('ingliz')"><a href="test-english.html">Ingliz Tili Testi</a></button>
+      <button onclick="startTest('uzbek')"><a href="test-rus.html">Rus Tili Testi</a></button>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 O'quvchilar Uchun Sayt. Barcha huquqlar himoyalangan.</p>
+  </footer>
+</body>
+</html>
